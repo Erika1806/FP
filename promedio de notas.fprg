@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tarea N3"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-27 11:55:46 a.&#160;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA0LTI3OzExOjI3OjIwIGEuwqBtLjszMjky"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA0LTI3OzExOjU1OjQ2IGEuwqBtLjs0OzM0MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sumanotas, nota, promedio" type="Real" array="False" size=""/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <assign variable="sumanotas" expression="0"/>
+            <for variable="contador" start="1" end="5" direction="inc" step="1">
+                <input variable="nota"/>
+                <assign variable="sumanotas" expression="sumanotas+nota"/>
+            </for>
+            <assign variable="promedio" expression="sumanotas/5"/>
+            <output expression="promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

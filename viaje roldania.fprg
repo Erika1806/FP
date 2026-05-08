@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tarea N1"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-27 11:12:45 a.&#160;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA0LTI3OzEwOjUxOjE4IGEuwqBtLjszMjk1"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA0LTI3OzExOjEyOjQ1IGEuwqBtLjsxOzM0MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cantidad, total" type="Integer" array="False" size=""/>
+            <input variable="cantidad"/>
+            <if expression="cantidad&gt;=100">
+                <then>
+                    <assign variable="total" expression="cantidad*65000"/>
+                </then>
+                <else>
+                    <if expression="cantidad&gt;=50">
+                        <then>
+                            <assign variable="total" expression="cantidad*70000"/>
+                        </then>
+                        <else>
+                            <if expression="cantidad&gt;=30">
+                                <then>
+                                    <assign variable="total" expression="cantidad*95000"/>
+                                </then>
+                                <else>
+                                    <assign variable="total" expression="8000000"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
