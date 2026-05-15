@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calcular promedio de edad con el ciclo PARA"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-15 08:15:12 a.&#160;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTE1OzA4OjAzOjU4IGEuwqBtLjszMzAx"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTE1OzA4OjE1OjEyIGEuwqBtLjsxOzM0MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, cantidad, edad, promedio, suma" type="Integer" array="False" size=""/>
+            <input variable="cantidad"/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="1" end="cantidad" direction="inc" step="1">
+                <input variable="edad"/>
+                <assign variable="suma" expression="suma+edad"/>
+            </for>
+            <assign variable="promedio" expression="suma/cantidad"/>
+            <output expression="promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
