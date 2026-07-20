@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Nombre Archivo"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-10 03:39:30 p.&#160;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA3LTEwOzAzOjIwOjA3IHAuwqBtLjszMzAx"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA3LTEwOzAzOjM5OjMwIHAuwqBtLjszOzM0MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NombreDeArchivo, Linea" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="NombreDeArchivo" expression="&quot;Numeros.txt&quot;"/>
+            <open expression="NombreDeArchivo" mode="write"/>
+            <for variable="i" start="1" end="1000" direction="inc" step="1">
+                <write expression="i"/>
+            </for>
+        </body>
+    </function>
+    <function name="PalabrasIngles" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Linea, NombreDeArchivo" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="NombreDeArchivo" expression="&quot;PalabrasIngles.txt&quot;"/>
+            <open expression="NombreDeArchivo" mode="read"/>
+            <while expression="!EOF()">
+                <read variable="Linea"/>
+                <output expression="Linea" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

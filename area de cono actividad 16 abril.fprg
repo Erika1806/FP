@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="area de cono actividad 16 abril"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-15 10:59:30 p.&#160;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA0LTE1OzEwOjUyOjI4IHAuwqBtLjszMzA5"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA0LTE1OzEwOjU5OjMwIHAuwqBtLjszOzM0MTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radio, p" type="Real" array="False" size=""/>
+            <assign variable="p" expression="3.14"/>
+            <input variable="radio"/>
+            <assign variable="" expression=""/>
+            <output expression="radio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

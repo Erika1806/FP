@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="promedio 21 de mayo"/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-24 07:56:37 p.&#160;m."/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI0OzA3OjQ4OjIwIHAuwqBtLjszMzEz"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtVEdNRjdNQzsyMDI2LTA1LTI0OzA3OjU2OjM3IHAuwqBtLjsxOzM0Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, edad, promedio, CantidadAlumnos, suma, Cantidadsalones" type="Integer" array="False" size=""/>
+            <input variable="Cantidadsalones"/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="1" end="Cantidadsalones" direction="inc" step="1">
+                <input variable="CantidadAlumnos"/>
+                <for variable="i" start="1" end="CantidadAlumnos" direction="inc" step="1">
+                    <input variable="edad"/>
+                    <assign variable="suma" expression="suma+edad"/>
+                </for>
+            </for>
+            <assign variable="promedio" expression="suma/CantidadAlumnos"/>
+            <output expression="promedio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
